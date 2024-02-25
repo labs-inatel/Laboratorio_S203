@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Dashboard MQTT</h1>
+  <div class="d-flex align-items-baseline justify-content-start gap-2 p-2 border border-2">
+    <h6>Tópico:</h6>
+    <h2 class="text-primary">{{ TOPIC_SMARTCAMPUS }}</h2>
+  </div>
+
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Tópico</td>
+        <td>Conteúdo</td>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let m of msgList">
+        <tr>
+          <td>{{ m.id }}</td>
+          <td>{{ m.topic }}</td>
+          <td>{{ m.content }}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>

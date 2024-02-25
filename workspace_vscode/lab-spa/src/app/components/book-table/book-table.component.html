@@ -1,0 +1,22 @@
+<!-- book-table.component.html -->
+
+<div class="container">
+  <h1>Tabela de Livros</h1>
+  <table class="table">
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Category</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let b of books">
+              <td>{{ b.id }}</td>
+              <td>{{ b.title }}</td>
+              <td>{{ b.category }}</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+

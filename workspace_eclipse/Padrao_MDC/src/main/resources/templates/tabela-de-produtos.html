@@ -1,0 +1,15 @@
+<body>
+  <h1>Tabela de produtos</h1>
+  <table border="1">
+    <tr>
+      <td>Id</td>
+      <td>Descrição</td>
+      <td>Preço</td>
+    </tr> 
+    <tr th:each="pvar:${listaProdutos}">
+      <td th:text="${pvar.id}"></td>
+      <td th:text="${pvar.descricao}"></td>
+      <td th:text="${pvar.preco}"></td>
+    </tr>
+  </table>
+</body>
