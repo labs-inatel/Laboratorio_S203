@@ -1,2 +1,3 @@
-# Laboratorio_S203
- S203 - Disciplina de Arquitetura e desenho de Software
+# S203 - Arquitetura e Desenho de Software
+
+ Repositório para registro de relatórios e exercícios desenvolvidos nas aulas.
